@@ -1,0 +1,23 @@
+.main-wrapper {
+    .container {
+        position: absolute;
+        margin-top: -3.66rem;
+        section {
+            background: white;
+            border-radius: .5rem;
+            .section-padding {
+                padding: 1.5rem;
+            }
+            .heading-section {
+                text-align: center;
+                padding-top: 3rem;
+                img {
+                    position: absolute;
+                    top: -1.75rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

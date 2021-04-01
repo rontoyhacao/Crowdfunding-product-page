@@ -16,6 +16,14 @@
   font-family: 'Commissioner', sans-serif;
 }
 
+body {
+  background: #f2f2f2;
+}
+
+button {
+  cursor: pointer;
+}
+
 .cyan-button {
   border: none;
   background: #3cb4ac;
@@ -40,7 +48,8 @@ p, .description {
 .wide-container {
   margin: 0 auto;
   width: 88%;
-  max-width: 68.8rem;
+  max-width: 45.63rem;
+  position: relative;
 }
 
 header {
@@ -77,7 +86,7 @@ header .header-container nav .hamburger {
   background-position: center;
   height: 1rem;
   width: 1rem;
-  z-index: 9;
+  z-index: 2;
   outline: none;
 }
 
@@ -113,6 +122,7 @@ header .header-container nav .show {
           box-shadow: 0 0 6.25rem 10rem rgba(0, 0, 0, 0.2);
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 }
 
 .nav-menu li {
@@ -128,13 +138,40 @@ header .header-container nav .show {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.06rem;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
   text-decoration: none;
   padding: 1.5em;
 }
 
 .mobile-nav-index {
-  z-index: 9;
+  z-index: 2;
+}
+
+.main-wrapper .container {
+  position: absolute;
+  margin-top: -3.66rem;
+}
+
+.main-wrapper .container section {
+  background: white;
+  border-radius: .5rem;
+}
+
+.main-wrapper .container section .section-padding {
+  padding: 1.5rem;
+}
+
+.main-wrapper .container section .heading-section {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.main-wrapper .container section .heading-section img {
+  position: absolute;
+  top: -1.75rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=styles.css.map */
