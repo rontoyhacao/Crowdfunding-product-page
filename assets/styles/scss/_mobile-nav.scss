@@ -1,0 +1,29 @@
+.nav-menu {
+    position: absolute;
+    background: white;
+    list-style: none;
+    left: 0;
+    top: 3.5rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 0 6.25rem 10rem rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    li {
+        border-bottom: 1px solid $Light-gray;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        a {
+            display: flex;
+            font-size: 1.06rem;
+            font-weight: 700;
+            color: black;
+            text-decoration: none;
+            padding: 1.5em;
+        }
+    }
+}
+.mobile-nav-index {
+    z-index: 9;
+}

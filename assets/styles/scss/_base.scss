@@ -1,0 +1,31 @@
+@import './variables';
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+.cyan-button {
+    border: none;
+    background: $Moderate-cyan;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 3.13rem;
+}
+
+p {
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+p, .description {
+    color: $Dark-gray;
+}
+.description {
+    line-height: 1.5;
+}
+
+.wide-container {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 68.8rem;
+}
