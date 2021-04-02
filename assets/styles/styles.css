@@ -38,13 +38,17 @@ p {
   line-height: 1.5;
 }
 
-p, .description {
+p, .description, .status-description {
   color: #7a7a7a;
 }
 
 .description {
   line-height: 1.5;
   margin: 1.25rem 0;
+}
+
+.status-description {
+  margin: .5rem 0;
 }
 
 .wide-container {
@@ -232,6 +236,55 @@ header .header-container nav .show {
   width: 3.5rem;
   top: 0;
   left: 0;
+}
+
+.main-wrapper .container .status-wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .container .status-wrapper .status-container--margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.main-wrapper .container .status-wrapper .status-container--margin {
+  margin: 1rem 0;
+}
+
+.main-wrapper .container .status-wrapper .status-container--margin-top {
+  margin: 1rem 0;
+}
+
+.main-wrapper .container .status-wrapper hr {
+  width: 5rem;
+}
+
+.main-wrapper .container .status-wrapper .status {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-wrapper .container .progress {
+  background-color: rgba(122, 122, 122, 0.1);
+  border-radius: 3.13rem;
+  height: .75rem;
+  width: 100%;
+}
+
+.main-wrapper .container .progress .progress-bar {
+  background-color: #3cb4ac;
+  border-radius: 3.13rem;
+  height: 100%;
+  width: 75%;
 }
 
 @media screen and (max-width: 365px) {

@@ -23,14 +23,16 @@ p {
     margin: 1.5rem 0;
     line-height: 1.5;
 }
-p, .description {
+p, .description, .status-description {
     color: $Dark-gray;
 }
 .description {
     line-height: 1.5;
     margin: 1.25rem 0;
 }
-
+.status-description {
+    margin: .5rem 0;
+}
 .wide-container {
     margin: 0 auto;
     width: 88%;
