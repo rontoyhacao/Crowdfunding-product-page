@@ -28,8 +28,9 @@ button {
   border: none;
   background: #3cb4ac;
   color: white;
-  padding: 1em 2em;
+  padding: 1.13em 2.5em;
   border-radius: 3.13rem;
+  font-weight: 700;
 }
 
 p {
@@ -43,6 +44,7 @@ p, .description {
 
 .description {
   line-height: 1.5;
+  margin: 1.25rem 0;
 }
 
 .wide-container {
@@ -159,7 +161,11 @@ header .header-container nav .show {
 }
 
 .main-wrapper .container section .section-padding {
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.main-wrapper .container section .section-margin {
+  margin: 1.75rem 0;
 }
 
 .main-wrapper .container section .heading-section {
@@ -173,5 +179,80 @@ header .header-container nav .show {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.main-wrapper .container section .heading-section h1 {
+  font-size: 1.25rem;
+  padding: 0 1rem;
+}
+
+.main-wrapper .container section .heading-section .heading-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .heading-cta-button {
+  font-size: 1rem;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .heading-cta-button--margin {
+  margin-right: .5rem;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .heading-cta-button-bookmark--mobile {
+  background-color: transparent;
+  background-image: url(/assets/images/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: initial;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .heading-cta-button-bookmark--desktop {
+  display: none;
+  background: #f2f2f2;
+  color: #7a7a7a;
+  position: relative;
+  padding-left: 4.5em;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .heading-cta-button-bookmark--desktop .bookmark-icon {
+  position: absolute;
+  background-image: url(/assets/images/icon-bookmark.svg);
+  height: 3.5rem;
+  width: 3.5rem;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 365px) {
+  .heading-cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading-cta .heading-cta-button--margin {
+    padding: 1.13em 1em;
+    margin-right: initial !important;
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+  .heading-cta .heading-cta-button-bookmark--mobile {
+    display: none;
+  }
+  .heading-cta .heading-cta-button-bookmark--desktop {
+    display: initial !important;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

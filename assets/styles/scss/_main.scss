@@ -6,7 +6,10 @@
             background: white;
             border-radius: .5rem;
             .section-padding {
-                padding: 1.5rem;
+                padding: 2.5rem 1.5rem;
+            }
+            .section-margin {
+                margin: 1.75rem 0;
             }
             .heading-section {
                 text-align: center;
@@ -17,7 +20,66 @@
                     left: 50%;
                     transform: translateX(-50%);
                 }
+                h1 {
+                    font-size: 1.25rem;
+                    padding: 0 1rem;
+                }
+                .heading-cta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .heading-cta-button {
+                        font-size: 1rem;
+                    }
+                    .heading-cta-button--margin {
+                        margin-right: .5rem;
+                    }
+                    .heading-cta-button-bookmark--mobile {
+                        background-color: transparent;
+                        background-image: url(/assets/images/icon-bookmark.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        padding: initial;
+                        height: 3.5rem;
+                        width: 3.5rem;
+                    }
+                    .heading-cta-button-bookmark--desktop {
+                        display: none;
+                        background: $Light-gray;
+                        color: $Dark-gray;
+                        position: relative;
+                        padding-left: 4.5em;
+                        .bookmark-icon {
+                            position: absolute;
+                            background-image: url(/assets/images/icon-bookmark.svg);
+                            height: 3.5rem;
+                            width: 3.5rem;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .heading-cta {
+        flex-direction: column;
+        .heading-cta-button--margin {
+            padding: 1.13em 1em;
+            margin-right: initial !important;
+            margin-bottom: .5rem;
+            width: 100%;
+        }
+        .heading-cta-button-bookmark--mobile {
+            display: none;
+        }
+        .heading-cta-button-bookmark--desktop {
+            display: initial !important;
+            width: 100%;
         }
     }
 }
