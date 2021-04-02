@@ -7,6 +7,19 @@
             border-radius: .5rem;
             .section-padding {
                 padding: 2.5rem 1.5rem;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                .product-list-wrapper ul {
+                    list-style: none;
+                    .product-container {
+                        border: 1px solid $Light-gray2;
+                        border-radius: .5rem;
+                    }
+                    .product-container--padding {
+                        padding: 1.25rem 1.5rem;
+                    }
+                }
             }
             .section-margin {
                 margin: 1.75rem 0;
@@ -78,6 +91,9 @@
             }
             hr {
                 width: 5rem;
+                background: $Light-gray2;
+                border: none;
+                height: 1px;
             }
             .status {
                 font-weight: 700;
@@ -85,7 +101,7 @@
             }
         }
         .progress {
-            background-color: rgba(122, 122, 122, 0.1);
+            background-color: $Light-gray;
             border-radius: 3.13rem;
             height: .75rem;
             width: 100%;
