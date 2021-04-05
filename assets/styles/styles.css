@@ -33,6 +33,14 @@ button {
   font-weight: 700;
 }
 
+.cyan-button:hover {
+  background: #147b74;
+}
+
+.cyan-button:disabled {
+  background: #7a7a7a;
+}
+
 p {
   margin: 1.5rem 0;
   line-height: 1.5;
@@ -156,7 +164,7 @@ header .header-container nav .show {
 
 .main-wrapper .container {
   position: absolute;
-  margin-top: -3.66rem;
+  margin: -3.66rem 0 5rem;
 }
 
 .main-wrapper .container section {
@@ -181,8 +189,37 @@ header .header-container nav .show {
   border-radius: .5rem;
 }
 
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container h3 {
+  font-size: 1rem;
+}
+
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container .product-pledge {
+  color: #3cb4ac;
+  margin: .5rem 0;
+}
+
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container .product-status {
+  margin: 1.5rem 0;
+  color: #7a7a7a;
+}
+
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container .product-status span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-right: .25rem;
+}
+
 .main-wrapper .container section .section-padding .product-list-wrapper ul .product-container--padding {
   padding: 1.25rem 1.5rem;
+}
+
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container--margin {
+  margin: 1.75rem 0;
+}
+
+.main-wrapper .container section .section-padding .product-list-wrapper ul .product-container--disabled {
+  opacity: 0.5;
 }
 
 .main-wrapper .container section .section-margin {
@@ -227,6 +264,10 @@ header .header-container nav .show {
   margin-right: .5rem;
 }
 
+.main-wrapper .container section .heading-section .heading-cta .bookmark-container label {
+  display: none;
+}
+
 .main-wrapper .container section .heading-section .heading-cta .heading-cta-button-bookmark--mobile {
   background-color: transparent;
   background-image: url(/assets/images/icon-bookmark.svg);
@@ -253,6 +294,10 @@ header .header-container nav .show {
   width: 3.5rem;
   top: 0;
   left: 0;
+}
+
+.main-wrapper .container section .heading-section .heading-cta .bookmarked {
+  background-image: url(/assets/images/icon-bookmark-bookmarked.svg);
 }
 
 .main-wrapper .container .status-wrapper {
@@ -320,12 +365,36 @@ header .header-container nav .show {
     margin-bottom: .5rem;
     width: 100%;
   }
-  .heading-cta .heading-cta-button-bookmark--mobile {
-    display: none;
-  }
-  .heading-cta .heading-cta-button-bookmark--desktop {
-    display: initial !important;
+  .heading-cta .bookmark-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #f2f2f2;
+    border-radius: 3.13rem;
     width: 100%;
+    position: relative;
+  }
+  .heading-cta .bookmark-container .heading-cta-button-bookmark--mobile {
+    position: absolute;
+    left: 0;
+  }
+  .heading-cta .bookmark-container label {
+    display: initial !important;
+    font-weight: 700;
+    color: #7a7a7a;
+    padding: 1rem;
+    padding-left: 4rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  .heading-cta .bookmark-container .bookmarked-label {
+    color: #147b74;
   }
 }
 /*# sourceMappingURL=styles.css.map */

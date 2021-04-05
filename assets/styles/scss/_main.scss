@@ -1,7 +1,7 @@
 .main-wrapper {
     .container {
         position: absolute;
-        margin-top: -3.66rem;
+        margin: -3.66rem 0 5rem;
         section {
             background: white;
             border-radius: .5rem;
@@ -15,9 +15,32 @@
                     .product-container {
                         border: 1px solid $Light-gray2;
                         border-radius: .5rem;
+                        h3 {
+                            font-size: 1rem;
+                        }
+                        .product-pledge {
+                            color: $Moderate-cyan;
+                            margin: .5rem 0;
+                        }
+                        .product-status {
+                            margin: 1.5rem 0;
+                            color: $Dark-gray;
+                            span {
+                                font-size: 2rem;
+                                font-weight: 700;
+                                color: black;
+                                margin-right: .25rem;
+                            }
+                        }
                     }
                     .product-container--padding {
                         padding: 1.25rem 1.5rem;
+                    }
+                    .product-container--margin {
+                        margin: 1.75rem 0;
+                    }
+                    .product-container--disabled {
+                        opacity: 0.5;
                     }
                 }
             }
@@ -47,6 +70,11 @@
                     .heading-cta-button--margin {
                         margin-right: .5rem;
                     }
+                    .bookmark-container {
+                        label {
+                            display: none;
+                        }
+                    }
                     .heading-cta-button-bookmark--mobile {
                         background-color: transparent;
                         background-image: url(/assets/images/icon-bookmark.svg);
@@ -71,6 +99,9 @@
                             top: 0;
                             left: 0;
                         }
+                    }
+                    .bookmarked {
+                        background-image: url(/assets/images/icon-bookmark-bookmarked.svg);
                     }
                 }
             }
@@ -124,12 +155,37 @@
             margin-bottom: .5rem;
             width: 100%;
         }
-        .heading-cta-button-bookmark--mobile {
-            display: none;
-        }
-        .heading-cta-button-bookmark--desktop {
-            display: initial !important;
+        .bookmark-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $Light-gray;
+            border-radius: 3.13rem;
             width: 100%;
+            position: relative;
+            .heading-cta-button-bookmark--mobile {
+                position: absolute;
+                left: 0;
+            }
+            label {
+                display: initial !important;
+                font-weight: 700;
+                color: $Dark-gray;
+                padding: 1rem;
+                padding-left: 4rem;
+                cursor: pointer;
+                width: 100%;
+            }
+            .bookmarked-label {
+                color: $Dark-cyan;
+            }
         }
+        // .heading-cta-button-bookmark--mobile {
+        //     display: none;
+        // }
+        // .heading-cta-button-bookmark--desktop {
+        //     display: initial !important;
+        //     width: 100%;
+        // }
     }
 }

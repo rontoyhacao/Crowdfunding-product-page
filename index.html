@@ -39,11 +39,14 @@
                 <div class="description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</div>
                 <div class="heading-cta">
                   <button class="cyan-button heading-cta-button heading-cta-button--margin">Back this project</button>
-                  <button class="cyan-button heading-cta-button heading-cta-button-bookmark--mobile"></button>
-                  <button class="cyan-button heading-cta-button heading-cta-button-bookmark--desktop">
+                  <div class="bookmark-container">
+                    <button id="bookmark" class="cyan-button heading-cta-button heading-cta-button-bookmark heading-cta-button-bookmark--mobile"></button>
+                    <label for="bookmark">Bookmark</label>
+                  </div>
+                  <!-- <button class="cyan-button heading-cta-button heading-cta-button-bookmark heading-cta-button-bookmark--desktop">
                     <div class="bookmark-icon"></div>
                     Bookmark
-                  </button>
+                  </button> -->
                 </div>
               </div>
             </section>
@@ -87,34 +90,34 @@
                         </div>
                         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
                         <div class="product-container-cta">
-                          <div class="product-status"><span>101</span>left</div>
+                          <div class="product-status"><span>101</span> left</div>
                           <button class="cyan-button">Select Reward</button>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div class="product-container product-container--padding">
+                      <div class="product-container product-container--padding product-container--margin">
                         <div class="product-container-title">
                           <h3>Black Edition Stand</h3>
                           <div class="product-pledge">Pledge $75 or more</div>
                         </div>
                         <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
                         <div class="product-container-cta">
-                          <div class="product-status"><span>64</span>left</div>
+                          <div class="product-status"><span>64</span> left</div>
                           <button class="cyan-button">Select Reward</button>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div class="product-container product-container--padding">
+                      <div class="product-container product-container--padding product-container--disabled">
                         <div class="product-container-title">
                           <h3>Mahogany Special Edition</h3>
                           <div class="product-pledge">Pledge $200 or more</div>
                         </div>
                         <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
                         <div class="product-container-cta">
-                          <div class="product-status"><span>0</span>left</div>
-                          <button class="cyan-button cyan-button--disabled">Out of Stock</button>
+                          <div class="product-status"><span>0</span> left</div>
+                          <button class="cyan-button" disabled>Out of Stock</button>
                         </div>
                       </div>
                     </li>
@@ -185,5 +188,6 @@
 
   <!-- Success modal end -->
   <script src="/assets/scripts/hamburger.js"></script>
+  <script src="/assets/scripts/bookmark.js"></script>
 </body>
 </html>
