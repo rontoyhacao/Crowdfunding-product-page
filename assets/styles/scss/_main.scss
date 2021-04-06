@@ -1,7 +1,8 @@
 .main-wrapper {
     .container {
         position: absolute;
-        margin: -3.66rem 0 5rem;
+        margin-top: -3.66rem;
+        padding-bottom: 5rem;
         section {
             background: white;
             border-radius: .5rem;
@@ -145,6 +146,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 365px) {
     .heading-cta {
