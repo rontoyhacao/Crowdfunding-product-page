@@ -123,8 +123,6 @@ header .header-container nav .open {
 header .header-container nav .show {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
 }
 
 .hero {
@@ -148,6 +146,8 @@ header .header-container nav .show {
           box-shadow: 0 0 6.25rem 10rem rgba(0, 0, 0, 0.2);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
   z-index: 1;
 }
 
@@ -430,8 +430,8 @@ header .header-container nav .show {
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .modal-container .modal {

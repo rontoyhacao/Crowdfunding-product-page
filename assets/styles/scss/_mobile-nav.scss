@@ -9,6 +9,7 @@
     box-shadow: 0 0 6.25rem 10rem rgba(0, 0, 0, 0.2);
     visibility: hidden;
     opacity: 0;
+    transition: opacity .5s;
     z-index: 1;
     li {
         border-bottom: 1px solid $Light-gray;
