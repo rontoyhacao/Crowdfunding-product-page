@@ -34,11 +34,18 @@ button {
         background: $Dark-gray;
     }
 }
+.pledge-input {
+    padding: 1.13em 2.5em;
+    border-radius: 3.13rem;
+    border: 1px solid $Light-gray2;
+    width: 100%;
+    margin: 1.25rem 0;
+}
 p {
     margin: 1.5rem 0;
     line-height: 1.5;
 }
-p, .description, .status-description {
+p, .description, .status-description, .enter-pledge {
     color: $Dark-gray;
 }
 .description {

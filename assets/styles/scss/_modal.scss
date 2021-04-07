@@ -82,3 +82,11 @@
 .product-container-cta-desktop {
     display: none;
 }
+
+.product-container-cta {
+    border-top: 1px solid $Light-gray2;
+    // display: none;
+    .product-pledge-cta {
+        text-align: center;
+    }
+}
